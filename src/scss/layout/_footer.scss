@@ -1,0 +1,23 @@
+.footer {
+    width: 390px; //me dijo ana que a los contenedores no se le daba dimension, pero no se como adaptarlo a mv de primeras.
+    margin-top: 100px; //quitar este al final , es solo para mirar como va quedando el border top;
+    border-top: solid 1px $color-gray;
+    border-bottom: solid 1px $color-gray;// quitar, este borde simula la parte de abajo del navegador, lo pongo solo para hacer de tope y ver el espacio que necesitaria el logo de adalab con respecto a la pagina de abajo
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__p {
+        font-family: $font-body;
+        font-size: 18px;
+        color: $color-gray;
+        padding: 30px 0;
+
+    }
+
+    &__img {
+        width: 150px;
+        padding-bottom: 20px;
+    }
+}
