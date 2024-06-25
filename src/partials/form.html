@@ -1,10 +1,14 @@
-<form action="https://dev.adalab.es/api/form " method="get">
+<form class="form" action="https://dev.adalab.es/api/form " method="get">
   
 
     <fieldset>
-        <legend>DISEÑA</legend>
+        <!-- pongo este div para hacer un display flex y meter un space between entre el titulo y el icono  -->
+        <div class="container__tittleArrow"> 
+            <legend>DISEÑA</legend> 
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
 
-        <h1>COLORES</h1> 
+        <h1 class="tittle__colors">COLORES</h1> 
         <!-- no se si va con h1 o con otro campo de formulario que no recuerdo/sé -->
 
         <div class="container-itemcolors">
@@ -43,17 +47,68 @@
     </div>
     </fieldset>
 
-    <!-- <fieldset>
-        <legend>Regístrate con tu correo electronico</legend>
-        <label for="email">¿Cuál es tu correo electrónico?</label>
-        <input type="email" name="email" id="email" placeholder="Pon tu correo electrónico." />
-        <label for="confirmacion-email">Confirma el correo electrónico</label>
-        <input type="email" name="email" id="confirmacion-email" placeholder="Vuelve a poner tu correo electrónico." />
-        <label for="password">Crea una contraseña</label>
-        <input type="password" name="password" id="password" placeholder="Crea una contraseña." />
-        <label for="nickname">¿Cómo quieres que te llamemos?</label>
-        <input type="text" name="nickname" id="nickname" placeholder="Nombre de perfil." />
-        <p>Esto aparece en tu perfil</p>
-    </fieldset>  -->
+    <fieldset>
+        
+        <div class="container__tittleArrow">
+            <legend>RELLENA</legend> 
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+
+        <div class="container__form">
+            <label for="name"> Nombre completo </label>
+            <input class= "form__input" type="text" name="name" id="name" placeholder="Ej: Laura Parra Fernández" />
+        </div>
+
+        <div class="container__form">
+            <label for="work">Puesto</label>
+            <input class= "form__input" type="text" name="work" id="work" placeholder="Ej: Front-end unicorn" />
+        </div>
+      
+        <div class="container__form">
+            <label for="image">Imagen de perfil</label>
+            <div class="container__form-addImage">
+                <a class= "link__addImage" href="">Añadir imagen</a> <div class="empty__div"> </div> </div>
+            </div>
+        </div>
+
+        <div class="container__form">
+            <label for="email">Email</label>
+            <input class= "form__input" type="email" id="email" name="email" placeholder="Ej:laupafer93@gmail.com">
+        </div>
+
+        <div class="container__form">
+            <label for="telefono">Teléfono</label>
+            <input class= "form__input" type="number" id="telefono" name="telefono" placeholder="Ej: 123 456 789" required>
+        </div>
+
+        <div class="container__form">
+            <label for="linkedin">LinkedIn</label>
+            <input class= "form__input" type="url" id="linkedin" name="linkedin" placeholder=" Ej: https://www.linkedin.com/in/tu-perfil/">
+        </div>
+
+        <div class="container__form">
+            <label for="github">Github</label>
+            <input class= "form__input" type="text" id="github" name="github" placeholder="Ej: @laura-pf" >
+        </div>
+    </fieldset>  
+
+    <fieldset>
+        <div class="container__form">
+            <div class="container__tittleArrow">
+                <legend>COMPARTE</legend> <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="container__button">
+                <input class="container__button-submit" type="submit" value="CREAR TARJETA">
+            </div>
+        </div>
+    </fieldset>
 
     </form>
+
+    <!-- mensaje de cuando se crea la tarjeta, rellenar con js? -->
+
+    <section>
+        <h1></h1>
+        <p></p>
+        <a href=""></a>
+    </section>

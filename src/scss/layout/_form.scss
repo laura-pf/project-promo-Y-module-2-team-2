@@ -1,5 +1,26 @@
 
+fieldset {
+    border: none;
+    margin-top: 20px;
+}
 
+.form {
+    
+    padding: 30px;
+    border: none;
+}
+
+.container__tittleArrow {
+    display: flex;
+    justify-content: space-between;
+}
+
+.tittle__colors {
+    padding: 15px;
+    font-size: medium;
+    font-weight: normal;
+
+}
 .container-itemcolors {
     display: flex;
     flex-direction: row-reverse;
@@ -37,19 +58,19 @@
     &-1 {
         width: 30px;
         height: 25px;
-        background-color: #114e4e;
+        background-color: #420101;
     }
 
     &-2 {
         width: 30px;
         height: 25px;
-        background-color: #438792;
+        background-color: #bd1010;
     }
 
     &-3 {
         width: 30px;
         height: 25px;
-        background-color: #a2deaf;
+        background-color: #e95626;
     }
 }
 
@@ -61,18 +82,73 @@
     &-1 {
         width: 30px;
         height: 25px;
-        background-color: #114e4e;
+        background-color: #3e5b65;
     }
 
     &-2 {
         width: 30px;
         height: 25px;
-        background-color: #438792;
+        background-color: #eab052 ;
     }
 
     &-3 {
         width: 30px;
         height: 25px;
-        background-color: #a2deaf;
+        background-color: #a0c0cf;
     }
 }
+
+.container__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px; 
+    gap: 10px;  
+
+    &-addImage {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px
+    }
+
+}
+
+.form__input{
+    width: 200px;
+    height: 40px;
+}
+
+.link__addImage {
+    background-color: #e17334;
+    width: 200px;
+    padding: 10px;
+
+    text-align: center;
+
+}
+
+.empty__div {
+    width: 35px;
+    height: 35px;
+    border: solid 1px gray;
+}
+
+.container__button {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-submit {
+        all: unset; //resetea los estilos de botón
+        display: inline-block;
+        background-color: #e17334;
+        width: 200px;
+        text-align: center;
+        padding: 25px 20px;
+        border-radius: 20px;
+}
+}
+
+
+   
