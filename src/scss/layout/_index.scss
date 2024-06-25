@@ -40,7 +40,6 @@
 
 .rectangle {
     padding: 49px 59px 31px 20px;
-    opacity: 0.21;
     border-radius: 4px;
     border: solid 2.6px;
     border-color: #e17334;
@@ -75,10 +74,11 @@
   .buttom {
     width: 129px;
     height: 42px;
-    margin: 38px 75px 0 65px;
-    padding: 10px 20px;
+    margin: 38px auto;
+    padding: 11px 0;
     border-radius: 21px;
-    background-color: #438792
+    background-color: #438792;
+    text-align: center;
   }
 
   .start {
