@@ -7,6 +7,8 @@
 
 .fons {
     background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
 }
 
 .visit-tarjet {
@@ -34,16 +36,66 @@
     letter-spacing: normal;
     text-align: center;
     color: #114e4e;
-    padding-bottom: 40px;
 }
 
 .rectangle {
-    width: 268px;
-    height: 73.8px;
-    margin: 17.8px 0 0.2px;
-    padding: 15px 20px 9.8px 20px;
+    padding: 49px 59px 31px 20px;
     opacity: 0.21;
     border-radius: 4px;
     border: solid 2.6px;
     border-color: #e17334;
   }
+
+  .desing {
+    width: 32px;
+    height: 26px;
+    font-size: 22.4px;
+    letter-spacing: normal;
+    text-align: center;
+    color: #e17334;
+  }
+
+  .text {
+
+  }
+
+  .options {
+    display: flex;
+    height: 88px;
+    width: 303px;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 4px;
+    border: solid 2.6px;
+    border-color: #e17334;
+    gap: 28px;
+    margin: 10px;
+  }
+
+  .buttom {
+    width: 129px;
+    height: 42px;
+    margin: 38px 75px 0 65px;
+    padding: 10px 20px;
+    border-radius: 21px;
+    background-color: #438792
+  }
+
+  .start {
+    font-family: OpenSans;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: white;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
