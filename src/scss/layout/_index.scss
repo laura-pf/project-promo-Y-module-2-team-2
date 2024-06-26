@@ -18,11 +18,21 @@
   padding-right: 30px;
   
 }
+ 
+//añado a una clase div que encierra los span y las optoion para aplicarle flex y centrarlo en la pagina.
+.container-visit-tarjet {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .visit-tarjet {
-  display: inline-block;
-  margin: 57.4px 21.9px 4px 63.1px;
-  font-family: sans-serif;
+  // display: inline-block;
+  // margin: 57.4px 21.9px 4px 63.1px;
+  margin-top: 45px;
+  
+  font-family: $font-tittle;
   font-size: 18.2px;
   font-weight: 600;
   font-stretch: normal;
@@ -44,6 +54,7 @@
   letter-spacing: normal;
   text-align: center;
   color: #114e4e;
+  margin-bottom: 25px;
 }
 
 .desing {
