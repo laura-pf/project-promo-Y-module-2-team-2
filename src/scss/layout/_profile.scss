@@ -1,6 +1,8 @@
 .card {
-  background-color: #bfcdd0;
+  // background-color: #bfcdd0;
   padding: 38px 35px 40px 45px;
+  background-image: url(/images/imagen-nubes-fondo-sin-letras.jpg);
+ 
 
   &__button {
     font-family: $font-body;
@@ -18,6 +20,9 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
+    
+    background-color: rgba(255, 255, 255, 0.384)
+    
   }
 
   &__profile {

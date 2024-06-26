@@ -2,10 +2,10 @@
 
     <!-- DISEÑA -->
 
-    <fieldset>
+    <fieldset class="fieldset">
         <!-- pongo este div para hacer un display flex y meter un space between entre el titulo y el icono  -->
         <div class="container__tittleArrow"> 
-            <legend> <i class="desing fa-regular fa-object-ungroup"></i> DISEÑA</legend> 
+            <legend class="legendTittle"> <i class="desing fa-regular fa-object-ungroup"></i> DISEÑA</legend> 
             <i class="fa-solid fa-angle-down"></i>
         </div>
 
@@ -50,60 +50,63 @@
 
     <!-- RELLENA -->
 
-    <fieldset>
+    <fieldset class="fieldset">
         
         <div class="container__tittleArrow">
-            <legend> <i class="desing fa-regular fa-keyboard"></i> RELLENA</legend> 
+            <legend  class="legendTittle"> <i class="desing fa-regular fa-keyboard"></i> RELLENA</legend> 
             <i class="fa-solid fa-angle-down"></i>
         </div>
 
         <div class="container__form">
-            <label for="name"> Nombre completo </label>
-            <input class= "form__input" type="text" name="name" id="name" placeholder="Ej: Laura Parra Fernández" />
+            <label class="tittleInput" for="name"> Nombre completo </label>
+            <input class= "form__input" type="text" name="name" id="name" placeholder="Ej: Ralph Wiggum" />
         </div>
 
         <div class="container__form">
-            <label for="work">Puesto</label>
-            <input class= "form__input" type="text" name="work" id="work" placeholder="Ej: Front-end unicorn" />
+            <label class="tittleInput" for="work">Puesto</label>
+            <input class= "form__input" type="text" name="work" id="work" placeholder="Ej: Estudiante unicornio" />
         </div>
       
         <div class="container__form">
-            <label for="image">Imagen de perfil</label>
+            <label class="tittleInput" for="image">Imagen de perfil</label>
             <div class="container__form-addImage">
                 <a class= "link__addImage" href="">Añadir imagen</a> <div class="empty__div"> </div> </div>
             </div>
         </div>
 
         <div class="container__form">
-            <label for="email">Email</label>
-            <input class= "form__input" type="email" id="email" name="email" placeholder="Ej:laupafer93@gmail.com">
+            <label class="tittleInput" for="email">Email</label>
+            <input class= "form__input" type="email" id="email" name="email" placeholder="Ej: yomellamoralph@gmail.com"/>
         </div>
 
         <div class="container__form">
-            <label for="telefono">Teléfono</label>
-            <input class= "form__input" type="number" id="telefono" name="telefono" placeholder="Ej: 123 456 789" required>
+            <label class="tittleInput" for="telefono">Teléfono</label>
+            <input class= "form__input" type="number" id="telefono" name="telefono" placeholder="Ej: 666 666 666"/>
         </div>
 
         <div class="container__form">
-            <label for="linkedin">LinkedIn</label>
-            <input class= "form__input" type="url" id="linkedin" name="linkedin" placeholder=" Ej: https://www.linkedin.com/in/tu-perfil/">
+            <label class="tittleInput" for="linkedin">LinkedIn</label>
+            <input class= "form__input" type="url" id="linkedin" name="linkedin" placeholder=" Ej: https://www.linkedin.com/in/ralph-wiggum/"/>
         </div>
 
         <div class="container__form">
-            <label for="github">Github</label>
-            <input class= "form__input" type="text" id="github" name="github" placeholder="Ej: @laura-pf" >
+            <label class="tittleInput" for="github">Github</label>
+            <input class= "form__input" type="text" id="github" name="github" placeholder="Ej: @chuchu-chuli" />
         </div>
     </fieldset>  
 
     <!-- COMPARTE -->
 
-    <fieldset>
+    <fieldset class="fieldset">
         <div class="container__form">
             <div class="container__tittleArrow">
-                <legend><i class="desing fa-solid fa-share-nodes"></i>COMPARTE</legend> <i class="fa-solid fa-angle-down"></i>
+                <legend  class="legendTittle"><i class="desing fa-solid fa-share-nodes"></i>COMPARTE</legend> <i class="fa-solid fa-angle-down"></i>
             </div>
             <div class="container__button">
-                <input class="container__button-submit" type="submit" value="CREAR TARJETA">
+                <div class="container__button-iconoSubmit">
+                    <i class="fa-regular fa-address-card"></i>
+                    <input class="container__button-submit" type="submit" value="CREAR TARJETA">
+                </div>
             </div>
         </div>
     </fieldset>

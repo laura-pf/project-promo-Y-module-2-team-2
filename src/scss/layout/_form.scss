@@ -1,7 +1,8 @@
 
-fieldset {
+.fieldset {
     border: none;
     margin-top: 20px;
+    border-bottom: solid 1px #d8d8d8;
 }
 
 .form {
@@ -13,10 +14,22 @@ fieldset {
 .container__tittleArrow {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px
+}
+
+.legendTittle{
+    font-family: $font-body;
+    font-size: 22px;
+    font-weight: normal;
 }
 
 .tittle__colors {
-    padding: 15px;
+    display:inline-block;
+    margin-top: 20px;
+    padding-left: 25px;
+    font-family: $font-body;
+    font-weight: lighter;
     font-size: medium;
     font-weight: normal;
 
@@ -25,7 +38,7 @@ fieldset {
     display: flex;
     flex-direction: row-reverse;
     gap: 10px;
-    margin-top: 10px;
+    margin-bottom: 18px;
 }
 
 .colors__1 {
@@ -35,13 +48,13 @@ fieldset {
     &-1 {
         width: 30px;
         height: 25px;
-        background-color: #114e4e;
+        background-color: #0408ff;
     }
 
     &-2 {
         width: 30px;
         height: 25px;
-        background-color: #438792;
+        background-color: #fae207;
     }
 
     &-3 {
@@ -58,19 +71,19 @@ fieldset {
     &-1 {
         width: 30px;
         height: 25px;
-        background-color: #420101;
+        background-color: #0da87a;
     }
 
     &-2 {
         width: 30px;
         height: 25px;
-        background-color: #bd1010;
+        background-color: #fffec4;
     }
 
     &-3 {
         width: 30px;
         height: 25px;
-        background-color: #e95626;
+        background-color: #e87efd;
     }
 }
 
@@ -82,20 +95,27 @@ fieldset {
     &-1 {
         width: 30px;
         height: 25px;
-        background-color: #3e5b65;
+        background-color: #2b3538;
     }
 
     &-2 {
         width: 30px;
         height: 25px;
-        background-color: #eab052 ;
+        background-color: #b16d1f ;
     }
 
     &-3 {
         width: 30px;
         height: 25px;
-        background-color: #a0c0cf;
+        background-color: #45b658;
     }
+}
+
+.tittleInput {
+    font-family: $font-body;
+    font-size: 16px;
+    font-weight: lighter;
+    color: $color-label-form;
 }
 
 .container__form {
@@ -103,51 +123,81 @@ fieldset {
     flex-direction: column;
     margin-top: 25px; 
     gap: 10px;  
+    
 
     &-addImage {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 30px
-
+        gap: 30px;
+        
     }
 
 }
 
 .form__input{
     padding: 10px;
+    border: solid 1px $color-input-form;
 }
 
 .link__addImage {
-    background-color: #e17334;
+    background-color: $color-lightOrange;
     width: 200px;
     padding: 10px;
-
+    color: white;
+    font-family: $font-body;
+    font-size: 18px;
     text-align: center;
 
 }
 
 .empty__div {
-    width: 35px;
-    height: 35px;
-    border: solid 1px gray;
+    width: 42px;
+    height: 42px;
+    border: solid 1px $color-input-form;
+    
 }
 
 .container__button {
+    margin: 0 auto;
+    width: 280px;
     margin-top: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+    background-color: $color-lightOrange;
+    padding: 25px 0;
+    
+    
+   
+    border-radius: 20px;
+    margin-bottom: 40px;
+
+    &-iconoSubmit {
+        display: flex;
+        gap: 20px;
+
+    }
+    
+    
 
     &-submit {
         all: unset; //resetea los estilos de botón
         display: inline-block;
-        background-color: #e17334;
-        width: 200px;
-        text-align: center;
-        padding: 25px 20px;
-        border-radius: 20px;
+        color: white;
+        font-family: $font-body;
+        font-size: 24px;
+        font-weight: normal;
+        
 }
+
+}
+
+.fa-address-card{
+    color: white;
+    font-size: 28px;
+    
 }
 
 
