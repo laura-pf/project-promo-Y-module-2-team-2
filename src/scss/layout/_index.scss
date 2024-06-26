@@ -1,14 +1,22 @@
 .tarjet {
   width: 314px;
-  display: block;
-  padding: 19px;
-  padding-top: 95px;
+ 
+  // display: block;
+  // padding: 19px;
+  // padding-top: 95px;
+
 }
 
 .fons {
   background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  padding-left: 30px;
+  padding-right: 30px;
+  
 }
 
 .visit-tarjet {
@@ -22,12 +30,12 @@
   line-height: normal;
   letter-spacing: normal;
   text-align: center;
-  color: #e17334;
+  color: $color-lightOrange;
 }
 
 .best-contact {
   display: flex;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: $font-index;
   font-size: 14.8px;
   font-weight: normal;
   font-stretch: normal;
@@ -44,7 +52,7 @@
   font-size: 22.4px;
   letter-spacing: normal;
   text-align: center;
-  color: #e17334;
+  color: $color-lightOrange;
 }
 
 .options {
@@ -70,7 +78,7 @@
 }
 
 .start {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: $font-index;
   font-size: 16px;
   font-weight: 400;
   font-stretch: normal;
@@ -89,7 +97,7 @@
 }
 
 .text {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: $font-index;
   font-size: 13.8px;
   font-weight: normal;
   font-stretch: normal;

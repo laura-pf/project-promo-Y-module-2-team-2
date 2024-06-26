@@ -3,7 +3,7 @@
   padding: 38px 35px 40px 45px;
 
   &__button {
-    font-family: "Open Sans";
+    font-family: $font-body;
     width: 75px;
     height: 30px;
     border-radius: 30px;
@@ -37,14 +37,14 @@
     line-height: 1.11;
     font-weight: bold;
     margin-bottom: 4px;
-    font-family:Montserrat;
+    font-family: $font-card;
   }
   &__profile-occupation {
     font-size: 16px;
     line-height: 1.25;
     color: #54585a;
     margin-bottom: 10px;
-    font-family:Montserrat;
+    font-family: $font-card;
 
   }
   &__icons {
