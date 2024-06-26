@@ -1,0 +1,114 @@
+<form class="form" action="https://dev.adalab.es/api/form " method="get">
+  
+
+    <fieldset>
+        <!-- pongo este div para hacer un display flex y meter un space between entre el titulo y el icono  -->
+        <div class="container__tittleArrow"> 
+            <legend>DISEÑA</legend> 
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+
+        <h1 class="tittle__colors">COLORES</h1> 
+        <!-- no se si va con h1 o con otro campo de formulario que no recuerdo/sé -->
+
+        <div class="container-itemcolors">
+            <label for="colors1">
+                <span class="colors__1">
+                    <div class="colors__1-1"> </div>
+                    <div class="colors__1-2"> </div>
+                    <div class="colors__1-3"> </div>
+                </span>
+            </label>
+            <input type="radio" name="colors1" id="colors1" value="colors1" />
+        </div>
+
+        
+    <div class="container-itemcolors">
+        <label for="colors2">
+            <span class="colors__2">
+                <div class="colors__2-1"></div>
+                <div class="colors__2-2"></div>
+                <div class="colors__2-3"></div>
+            </span>
+        </label>
+        <input type="radio" name="colors2" id="colors2" value="colors2" />
+    </div>
+
+
+    <div class="container-itemcolors">
+        <label for="colors3">
+            <span class="colors__3">
+                <div class="colors__3-1" ></div>
+                <div class="colors__3-2"></div>
+                <div class="colors__3-3"></div>
+            </span>
+        </label>
+        <input type="radio" name="colors3" id="colors3" value="colors3" />
+    </div>
+    </fieldset>
+
+    <fieldset>
+        
+        <div class="container__tittleArrow">
+            <legend>RELLENA</legend> 
+            <i class="fa-solid fa-angle-down"></i>
+        </div>
+
+        <div class="container__form">
+            <label for="name"> Nombre completo </label>
+            <input class= "form__input" type="text" name="name" id="name" placeholder="Ej: Laura Parra Fernández" />
+        </div>
+
+        <div class="container__form">
+            <label for="work">Puesto</label>
+            <input class= "form__input" type="text" name="work" id="work" placeholder="Ej: Front-end unicorn" />
+        </div>
+      
+        <div class="container__form">
+            <label for="image">Imagen de perfil</label>
+            <div class="container__form-addImage">
+                <a class= "link__addImage" href="">Añadir imagen</a> <div class="empty__div"> </div> </div>
+            </div>
+        </div>
+
+        <div class="container__form">
+            <label for="email">Email</label>
+            <input class= "form__input" type="email" id="email" name="email" placeholder="Ej:laupafer93@gmail.com">
+        </div>
+
+        <div class="container__form">
+            <label for="telefono">Teléfono</label>
+            <input class= "form__input" type="number" id="telefono" name="telefono" placeholder="Ej: 123 456 789" required>
+        </div>
+
+        <div class="container__form">
+            <label for="linkedin">LinkedIn</label>
+            <input class= "form__input" type="url" id="linkedin" name="linkedin" placeholder=" Ej: https://www.linkedin.com/in/tu-perfil/">
+        </div>
+
+        <div class="container__form">
+            <label for="github">Github</label>
+            <input class= "form__input" type="text" id="github" name="github" placeholder="Ej: @laura-pf" >
+        </div>
+    </fieldset>  
+
+    <fieldset>
+        <div class="container__form">
+            <div class="container__tittleArrow">
+                <legend>COMPARTE</legend> <i class="fa-solid fa-angle-down"></i>
+            </div>
+            <div class="container__button">
+                <input class="container__button-submit" type="submit" value="CREAR TARJETA">
+            </div>
+        </div>
+    </fieldset>
+
+    </form>
+
+    <!-- mensaje de cuando se crea la tarjeta, rellenar con js? -->
+
+    <section>
+        <h1></h1>
+        <p></p>
+        <a href=""></a>
+    </section>
