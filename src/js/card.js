@@ -1,12 +1,14 @@
 'use strict';
 
-const nameInput = document.querySelector(".js-name");
+//const nameInput = document.querySelector(".js-name");
 const namePreview = document.querySelector(".js-profile-name");
-const occupationInput = document.querySelector(".js-job");
+//const occupationInput = document.querySelector(".js-job");
 const occupationPreview = document.querySelector(".js-profile-job");
-const emailInput = document.querySelector(".js-input-email");
-const phoneInput = document.querySelector (".js-input-number");
-const iconLinkedin = document.querySelector(".js-icon-linkedin")
+//const emailInput = document.querySelector(".js-input-email");
+//const phoneInput = document.querySelector (".js-input-number");
+const linkLinkedin = document.querySelector(".js-link-linkedin");
+const linkGithub = document.querySelector(".js-link-github");
+
 
 const inputsFromFill = document.querySelector(".js-form-fill");
 
@@ -16,7 +18,9 @@ inputsFromFill.addEventListener("input", (event) => {
     } else if (event.target.id === "work") {
         occupationPreview.innerHTML = event.target.value;
     } else if (event.target.id === "linkedin") {
-        iconLinkedin.href = event.target.value;
+        linkLinkedin.location.href = event.target.value;
+    } else if (event.target.id === "github") {
+        linkGithub.location.href = "https://github.com/" + event.target.value;
     }
     
 });
