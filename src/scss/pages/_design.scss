@@ -1,0 +1,19 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.design-container {
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+
+    .form-container,
+    .profile-container {
+      flex: 1;
+    }
+
+    .profile-container {
+      padding: 23px 40px 21px 0;
+    }
+  }
+}
