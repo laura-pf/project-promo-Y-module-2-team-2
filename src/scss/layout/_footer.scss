@@ -6,16 +6,28 @@
     justify-content: center;
     align-items: center;
 
+    @media (min-width: 768px){
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
     &__p {
         font-family: $font-body;
-        font-size: 18px;
+        font-size: 14px;
         color: $color-gray;
         padding: 30px 0;
-
     }
 
     &__img {
         width: 150px;
         padding-bottom: 20px;
+
+        @media (min-width: 768px){
+        width: 103px;
+        padding-bottom: 0;    
     }
+}
 }
