@@ -8,19 +8,27 @@ const occupationPreview = document.querySelector(".js-profile-job");
 //const phoneInput = document.querySelector (".js-input-number");
 const linkLinkedin = document.querySelector(".js-link-linkedin");
 const linkGithub = document.querySelector(".js-link-github");
+const linkPhone = document.querySelector(".js-link-phone");
+const linkEmail = document.querySelector(".js-link-email");
+
 
 
 const inputsFromFill = document.querySelector(".js-form-fill");
 
 inputsFromFill.addEventListener("input", (event) => {
+    event.preventDefault();
     if (event.target.id === "name"){
         namePreview.innerHTML = event.target.value;
     } else if (event.target.id === "work") {
         occupationPreview.innerHTML = event.target.value;
     } else if (event.target.id === "linkedin") {
-        linkLinkedin.location.href = event.target.value;
+        linkLinkedin.href = event.target.value;
     } else if (event.target.id === "github") {
-        linkGithub.location.href = "https://github.com/" + event.target.value;
+        linkGithub.href = event.target.value;
+    } else if (event.target.id === "telefono") {
+        linkPhone.href = event.target.value;
+    }  else if (event.target.id === "email") {
+        linkEmail.href = event.target.value;
     }
     
 });
