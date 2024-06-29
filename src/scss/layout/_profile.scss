@@ -8,6 +8,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
   }
  
   &__button {
@@ -18,7 +19,6 @@
     border: 1px solid white;
     font-size: 12px;
     line-height: 1.67;
-    background-color: transparent;
     text-align: center;
     margin-bottom: 20px;
     color: #54585a;
@@ -26,7 +26,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
-    background-color: rgba(255, 255, 255, 0.384)
+    background-color: rgba(255, 255, 255, 0.384);
   }
 
   &__profile {
@@ -35,6 +35,10 @@
     padding-top: 21px;
     box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
     border-radius: 2px;
+
+    @media (min-width: 768px) {
+      max-width: 240px;
+    }
   }
   &__profile-photo {
     display: block;
