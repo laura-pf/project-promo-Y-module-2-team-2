@@ -163,21 +163,8 @@
 }
 
 .container__button {
-    margin: 0 auto;
-    width: 280px;
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: $color-lightOrange;
-    padding: 25px 0;
-    
-    
-   
-    border-radius: 20px;
-    margin-bottom: 40px;
-
+    display: none;
+ 
     &-iconoSubmit {
         display: flex;
         gap: 20px;
@@ -209,5 +196,22 @@
     flex-direction: column;
     margin-top: 25px;
     gap: 10px;
+}
+
+.collapsedButton {
+    margin: 0 auto;
+        width: 280px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-lightOrange;
+        padding: 25px 0;
+    
+    
+    
+        border-radius: 20px;
+        margin-bottom: 40px;
 }
    

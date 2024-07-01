@@ -13,7 +13,7 @@ const linkEmail = document.querySelector(".js-link-email");
 
 
 
-const inputsFromFill = document.querySelector(".js-form-fill");
+const inputsFromFill = document.querySelector(".js-form-fillR");
 
 
 // const handleInput = (event) => {
