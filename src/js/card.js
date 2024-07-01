@@ -15,6 +15,12 @@ const linkEmail = document.querySelector(".js-link-email");
 
 const inputsFromFill = document.querySelector(".js-form-fill");
 
+
+// const handleInput = (event) => {
+
+// }
+
+
 inputsFromFill.addEventListener("input", (event) => {
     event.preventDefault();
     if (event.target.id === "name"){
@@ -24,11 +30,11 @@ inputsFromFill.addEventListener("input", (event) => {
     } else if (event.target.id === "linkedin") {
         linkLinkedin.href = event.target.value;
     } else if (event.target.id === "github") {
-        linkGithub.href = event.target.value;
+        linkGithub.href = "https://github.com/" + event.target.value; 
     } else if (event.target.id === "telefono") {
-        linkPhone.href = event.target.value;
+        linkPhone.href = "tel:" + event.target.value;
     }  else if (event.target.id === "email") {
-        linkEmail.href = event.target.value;
+        linkEmail.href = "mailto:" + event.target.value;
     }
     
 });
