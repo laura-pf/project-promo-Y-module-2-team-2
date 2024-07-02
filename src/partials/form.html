@@ -72,12 +72,21 @@
                     <label class="tittleInput" for="work">Puesto</label>
                     <input class= "form__input js-job" type="text" name="work" id="work" placeholder="Ej: Estudiante de mi cole" />
                 </div>
+
+                <!-- añadir imagen -->
             
-                <div class="container__form">
-                    <label class="tittleInput" for="image">Imagen de perfil</label>
+                    
+               
+                <div class="container__form image-section">
                     <div class="container__form-addImage">
-                        <a class= "link__addImage" href="">Añadir imagen</a> <div class="empty__div"> </div>
+                        <h1 class="tittleInput">Imagen de perfil</h1>
+                        <label class="button-addImage" for="img-selector">Añadir imagen</label>
+                        <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn">
                     </div>
+
+                    <div class="profile__preview js__profile-preview"></div>
+
+                    
                 </div>
 
                 <div class="container__form">

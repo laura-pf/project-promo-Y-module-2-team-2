@@ -131,12 +131,16 @@
 
     &-addImage {
         display: flex;
-        flex-direction: row;
-        align-items: center;
+        flex-direction: column;
         gap: 30px;
         
     }
 
+}
+
+.image-section {
+    display: flex;
+    flex-direction: row;
 }
 
 .form__input{
@@ -144,7 +148,7 @@
     border: solid 1px $color-input-form;
 }
 
-.link__addImage {
+.button-addImage {
     background-color: $color-lightOrange;
     width: 200px;
     padding: 10px;
@@ -155,12 +159,24 @@
 
 }
 
-.empty__div {
-    width: 42px;
-    height: 42px;
-    border: solid 1px $color-input-form;
-    
+.action__hiddenField {
+    /* Ocultamos el input de tipo "file" porque no podemos 
+  darle los estilos que queremos */
+    display: none;
 }
+
+.profile__preview{
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ border: 1px solid #ccc;
+ width: 50px;
+ height: 50px;
+ margin-left: 15px;
+ align-self: end;
+}
+
+
 
 .container__button {
     display: none;

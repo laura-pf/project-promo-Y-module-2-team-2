@@ -36,6 +36,7 @@ const defaultCard = {
             <i class="fa-brands fa-github-alt"></i>
           </div>
         </a>`,
+    //image: 
 
 }
 
