@@ -2,5 +2,6 @@
 
 import "./card.js";
 import "./desplegable.js";
-import "./resetButton.js"
+import "./addImage.js";
+import "./resetButton.js";
 
