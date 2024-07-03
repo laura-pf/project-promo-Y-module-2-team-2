@@ -1,6 +1,5 @@
 .footer {
     border-top: solid 1px $color-gray;
-    border-bottom: solid 1px $color-gray;// quitar, este borde simula la parte de abajo del navegador, lo pongo solo para hacer de tope y ver el espacio que necesitaria el logo de adalab con respecto a la pagina de abajo
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,11 +17,12 @@
 
     &__p {
         font-family: $font-body;
-        font-size: 14px;
+        font-size: 19px;
         color: $color-gray;
         padding: 30px 0;
 
         @media (min-width: 768px) {
+            font-size: 15px;
             padding: 0;
         }
     }

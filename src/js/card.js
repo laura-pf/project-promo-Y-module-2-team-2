@@ -1,11 +1,8 @@
 'use strict';
 
-//const nameInput = document.querySelector(".js-name");
+
 const namePreview = document.querySelector(".js-profile-name");
-//const occupationInput = document.querySelector(".js-job");
 const occupationPreview = document.querySelector(".js-profile-job");
-//const emailInput = document.querySelector(".js-input-email");
-//const phoneInput = document.querySelector (".js-input-number");
 const linkLinkedin = document.querySelector(".js-link-linkedin");
 const linkGithub = document.querySelector(".js-link-github");
 const linkPhone = document.querySelector(".js-link-phone");
