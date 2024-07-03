@@ -20,10 +20,19 @@ const inputsFromFill = document.querySelector(".js-form-fillR");
 
 inputsFromFill.addEventListener("input", (event) => {
     event.preventDefault();
+
     if (event.target.id === "name"){
-        namePreview.innerHTML = event.target.value;
-    } else if (event.target.id === "work") {
-        occupationPreview.innerHTML = event.target.value;
+        if (event.target.value) {
+            namePreview.innerHTML = event.target.value;
+        } else {
+            namePreview.innerHTML =  "Ralph Wiggum";
+        }
+    } else if (event.target.id === "work")  {
+        if (event.target.value){
+            occupationPreview.innerHTML = event.target.value;
+        } else {
+            occupationPreview.innerHTML = "Estudiante de mi cole";
+        }
     } else if (event.target.id === "linkedin") {
         linkLinkedin.href = event.target.value;
     } else if (event.target.id === "github") {
