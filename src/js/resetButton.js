@@ -36,7 +36,7 @@ const defaultCard = {
             <i class="fa-brands fa-github-alt"></i>
           </div>
         </a>`,
-    //image: 
+    image: "/images/ralph.jpg",
 
 }
 
@@ -48,7 +48,8 @@ const handleClickReset = (event) => {
     linkPhone.innerHTML = defaultCard.phone;
     linkLinkedin.innerHTML = defaultCard.linkedin;
     linkGithub.innerHTML = defaultCard.github;
-
+    profileImage.src = defaultCard.image;
+    profilePreview.style.backgroundImage = '';
 
 }
 
