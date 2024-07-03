@@ -39,11 +39,6 @@ inputsFromFill.addEventListener("input", (event) => {
     
 });
 
-
-
-
-
-
 // nameInput.addEventListener("input",(event)=>{
 // namePreview.innerHTML = event.target.value;
 // })
