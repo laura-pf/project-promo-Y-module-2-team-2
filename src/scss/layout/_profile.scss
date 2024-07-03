@@ -47,7 +47,7 @@
   }
   &__profile-name {
     font-size: 18px;
-    color: #2282ff;
+    color: #0408ff;
     line-height: 1.11;
     font-weight: bold;
     margin-bottom: 4px;
@@ -70,6 +70,7 @@
     gap: 10px;
     margin-top: 10px;
     padding-bottom: 12px;
+    color: #0408ff;
   }
 
   &__icon {
@@ -82,7 +83,7 @@
     align-items: center;
   }
   &__profile-title{
-    border-left: 5px solid #2282ff;
+    border-left: 5px solid  #fae207;
     padding-left: 20px;
   }
 }
