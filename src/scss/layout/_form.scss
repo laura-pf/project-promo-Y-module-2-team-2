@@ -1,0 +1,245 @@
+
+.fieldset {
+    border: none;
+    margin-top: 20px;
+    border-bottom: solid 1px #d8d8d8;
+}
+
+.form {
+    
+    padding: 30px;
+    border: none;
+}
+
+.container__tittleArrow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.legendTittle{
+    font-family: $font-body;
+    font-size: 22px;
+    font-weight: normal;
+}
+
+.tittle__colors {
+    display:inline-block;
+    margin-top: 20px;
+    padding-left: 25px;
+    font-family: $font-body;
+    font-weight: lighter;
+    font-size: medium;
+    font-weight: normal;
+
+}
+.container-itemcolors {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.colors__1 {
+    display: flex;
+    flex-direction: row;
+    
+    &-1 {
+        width: 30px;
+        height: 25px;
+        background-color: #0408ff;
+    }
+
+    &-2 {
+        width: 30px;
+        height: 25px;
+        background-color: #fae207;
+    }
+
+    &-3 {
+        width: 30px;
+        height: 25px;
+        background-color: #a2deaf;
+    }
+}
+
+.colors__2 {
+    display: flex;
+    flex-direction: row;
+
+    &-1 {
+        width: 30px;
+        height: 25px;
+        background-color: #0da87a;
+    }
+
+    &-2 {
+        width: 30px;
+        height: 25px;
+        background-color: #fffec4;
+    }
+
+    &-3 {
+        width: 30px;
+        height: 25px;
+        background-color: #e87efd;
+    }
+}
+
+.colors__3 {
+    display: flex;
+    flex-direction: row;
+
+
+    &-1 {
+        width: 30px;
+        height: 25px;
+        background-color: #2b3538;
+    }
+
+    &-2 {
+        width: 30px;
+        height: 25px;
+        background-color: #b16d1f ;
+    }
+
+    &-3 {
+        width: 30px;
+        height: 25px;
+        background-color: #45b658;
+    }
+}
+
+.tittleInput {
+    font-family: $font-body;
+    font-size: 16px;
+    font-weight: lighter;
+    color: $color-label-form;
+}
+
+.container__form-section {
+    display: none;
+}
+
+.container__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    gap: 10px;
+   
+
+    &-addImage {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        
+    }
+
+}
+
+.image-section {
+    display: flex;
+    flex-direction: row;
+}
+
+.form__input{
+    padding: 10px;
+    border: solid 1px $color-input-form;
+}
+
+.button-addImage {
+    background-color: $color-lightOrange;
+    width: 200px;
+    padding: 10px;
+    color: white;
+    font-family: $font-body;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.action__hiddenField {
+    /* Ocultamos el input de tipo "file" porque no podemos 
+  darle los estilos que queremos */
+    display: none;
+}
+
+.profile__preview{
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ border: 1px solid #ccc;
+ width: 50px;
+ height: 50px;
+ margin-left: 15px;
+ align-self: end;
+}
+
+.background__none {
+    background-image: none;
+}
+
+
+
+.container__button {
+    display: none;
+ 
+    &-iconoSubmit {
+        display: flex;
+        gap: 20px;
+
+    }
+    
+    
+
+    &-submit {
+        all: unset; //resetea los estilos de botón
+        display: inline-block;
+        color: white;
+        font-family: $font-body;
+        font-size: 24px;
+        font-weight: normal;
+        
+}
+
+}
+
+.fa-address-card{
+    color: white;
+    font-size: 28px;
+    
+}
+
+.collapsed {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.collapsedButton {
+    margin: 0 auto;
+        width: 280px;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $color-lightOrange;
+        padding: 25px 0;
+    
+    
+    
+        border-radius: 20px;
+        margin-bottom: 40px;
+}
+
+.rotation {
+transform: rotate(180deg);
+   
+}
+
+

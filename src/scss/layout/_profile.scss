@@ -1,0 +1,89 @@
+.card {
+  // background-color: #bfcdd0;
+  padding: 38px 35px 40px 45px;
+  background-image: url(/images/imagen-nubes-fondo-sin-letras.jpg);
+  height: 100%;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+ 
+  &__button {
+    font-family: $font-body;
+    width: 75px;
+    height: 30px;
+    border-radius: 30px;
+    border: 1px solid white;
+    font-size: 12px;
+    line-height: 1.67;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #54585a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    background-color: rgba(255, 255, 255, 0.384);
+    cursor: pointer;
+  }
+
+  &__profile {
+    background-color: white;
+    text-align: left;
+    padding-top: 21px;
+    box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.35);
+    border-radius: 2px;
+
+    @media (min-width: 768px) {
+      max-width: 240px;
+    }
+  }
+  &__profile-photo {
+    display: block;
+    width: 100%;
+  }
+  &__profile-name {
+    font-size: 18px;
+    color: #0408ff;
+    line-height: 1.11;
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-family: $font-card;
+  }
+  &__profile-occupation {
+    font-size: 16px;
+    line-height: 1.25;
+    color: #54585a;
+    margin-bottom: 10px;
+    font-family: $font-card;
+
+  }
+  &__icons {
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 0 20px;
+    gap: 10px;
+    margin-top: 10px;
+    padding-bottom: 12px;
+    color: #0408ff;
+  }
+
+  &__icon {
+    border: 2px solid #a2deaf;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__profile-title{
+    border-left: 5px solid  #fae207;
+    padding-left: 20px;
+  }
+}
