@@ -18,5 +18,5 @@ const o=document.querySelector(".js-profile-name"),r=document.querySelector(".js
           <div class="card__icon">
             <i class="fa-brands fa-github-alt"></i>
           </div>
-        </a>`,image:"/images/ralph.jpg"},T=e=>{D.reset(),o.innerHTML=t.name,r.innerHTML=t.job,f.innerHTML=t.email,g.innerHTML=t.phone,u.innerHTML=t.linkedin,m.innerHTML=t.github,p.src=t.image,L.style.backgroundImage=""};C.addEventListener("click",T);
+        </a>`,image:"./images/ralph.jpg"},T=e=>{D.reset(),o.innerHTML=t.name,r.innerHTML=t.job,f.innerHTML=t.email,g.innerHTML=t.phone,u.innerHTML=t.linkedin,m.innerHTML=t.github,p.src=t.image,L.style.backgroundImage=""};C.addEventListener("click",T);
 //# sourceMappingURL=main.js.map
