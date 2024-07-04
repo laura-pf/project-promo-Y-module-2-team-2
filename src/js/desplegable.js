@@ -17,7 +17,13 @@ const arrowComparte = document.querySelector(".js-arrowC");
 const handlerClickR = (event) => {
     event.preventDefault ();
     formRellena.classList.toggle ("collapsed");
+    formDiseña.classList.remove("collapsed");
+    buttonComparte.classList.remove("collapsed");
     arrowRellena.classList.toggle("rotation");
+    arrowComparte.classList.remove("rotation");
+    arrowDiseña.classList.remove("rotation");
+
+
     
 };
 
@@ -28,7 +34,13 @@ containerRellena.addEventListener ("click", handlerClickR);
 const handlerClickD = (event) => {
     event.preventDefault ();
     formDiseña.classList.toggle ("collapsed");
+    formRellena.classList.remove("collapsed");
+    buttonComparte.classList.remove("collapsed");
     arrowDiseña.classList.toggle("rotation");
+    arrowRellena.classList.remove("rotation");
+    arrowComparte.classList.remove("rotation");
+
+
     
 }
 
@@ -37,8 +49,14 @@ containerDiseña.addEventListener ("click", handlerClickD);
 //DESPLEGABLE COMPARTE
 const handlerClickC = (event) => {
     event.preventDefault ();
-    buttonComparte.classList.toggle ("collapsedButton");
+    buttonComparte.classList.toggle ("collapsedButton");  
+    formRellena.classList.remove("collapsed");
+    formDiseña.classList.remove("collapsed");
     arrowComparte.classList.toggle("rotation");
+    arrowDiseña.classList.remove("rotation");
+    arrowRellena.classList.remove("rotation");
+
+
     
 }
 
