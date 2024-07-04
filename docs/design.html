@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DESING AND CREATE YOUR PROFILE CARD</title>
+    
+    <!-- FUENTE OPENSANS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FUENTE MONTSERRAT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- link de iconos -->
+    <script src="https://kit.fontawesome.com/94e91f4c1c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/main-bb851eef.css">
+  </head>
+  <body>
+    <header class="header">  
+  <a href=./index.html>
+    <img
+    class="header__logo"
+    src="./images/logo-awesome-profile-cards-simpson.svg"
+    alt="icono"
+    />
+  </a> 
+</header>
+
+    <div class="design-container">
+      <div class="profile-container">
+        <section class="card">
+  <div class="card__container">
+    <button class="card__button js-buttonReset">
+      <i class="fa-solid fa-trash-can"></i>
+      RESET
+    </button>
+
+    <div class="card__profile js-card">
+      <div class="card__profile-title">
+        <h2 class="card__profile-name js-profile-name" id="profile-name">
+          Ralph Wiggum
+        </h2>
+        <h3
+          class="card__profile-occupation js-profile-job"
+          id="profile-occupation"
+        >
+          Estudiante de mi cole
+        </h3>
+      </div>
+
+     
+        <img 
+          class="card__profile-photo js__profile-image"
+          src="./images/ralph.jpg"
+          alt="Caricatura de un niño sujetando un plátano como si fuera un móvil"
+        />
+    
+
+      <div class="card__icons">
+        <a href="tel:" class="js-link-phone">
+          <div class="card__icon">
+            <i class="fa-solid fa-mobile-screen-button"></i>
+          </div>
+        </a>
+
+        <a href="mailto:" class="js-link-email">
+          <div class="card__icon">
+            <i class="fa-regular fa-envelope"></i>
+          </div>
+        </a>
+
+        <a href="" target="_blank" class="js-link-linkedin">
+          <div class="card__icon">
+            <i class="fa-brands fa-linkedin-in js-icon-linkedin"></i>
+          </div>
+        </a>
+
+        <a href="" target="_blank" class="js-link-github">
+          <div class="card__icon">
+            <i class="fa-brands fa-github-alt"></i>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+      </div>
+      <div class="form-container">
+        <form class="form js-form" action="https://dev.adalab.es/api/form " method="get">
+
+    <!-- DISEÑA -->
+
+    <fieldset class="fieldset">
+        <!-- pongo este div para hacer un display flex y meter un space between entre el titulo y el icono  -->
+        <div class="container__tittleArrow js-tittleArrowD"> 
+            <legend class="legendTittle"> <i class="desing fa-regular fa-object-ungroup"></i> DISEÑA</legend> 
+            <i class="fa-solid fa-angle-down js-arrowD"></i>
+        </div>
+        
+        <section class="container__form-section js-form-fillD">
+
+        <h1 class="tittle__colors">COLORES</h1> 
+        <!-- no se si va con h1 o con otro campo de formulario que no recuerdo/sé -->
+
+        <div class="container-itemcolors">
+            <label for="colors1">
+                <span class="colors__1">
+                    <div class="colors__1-1"> </div>
+                    <div class="colors__1-2"> </div>
+                    <div class="colors__1-3"> </div>
+                </span>
+            </label>
+            <input type="radio" name="colors" id="colors1" value="colors1" checked/>
+        </div>
+
+        
+    <div class="container-itemcolors">
+        <label for="colors2">
+            <span class="colors__2">
+                <div class="colors__2-1"></div>
+                <div class="colors__2-2"></div>
+                <div class="colors__2-3"></div>
+            </span>
+        </label>
+        <input type="radio" name="colors" id="colors2" value="colors2" />
+    </div>
+
+
+    <div class="container-itemcolors">
+        <label for="colors3">
+            <span class="colors__3">
+                <div class="colors__3-1" ></div>
+                <div class="colors__3-2"></div>
+                <div class="colors__3-3"></div>
+            </span>
+        </label>
+        <input type="radio" name="colors" id="colors3" value="colors3" />
+    </div>
+    </section>
+    </fieldset>
+
+    <!-- RELLENA -->
+
+    <fieldset class="fieldset">
+
+        
+            <div class="container__tittleArrow js-tittleArrowR">
+                <legend  class="legendTittle"> <i class="desing fa-regular fa-keyboard"></i> RELLENA</legend> 
+                <i class="fa-solid fa-angle-down js-arrowR"></i>
+            </div>
+
+            <section class="container__form-section js-form-fillR">
+
+                <div class="container__form">
+                    <label class="tittleInput" for="name"> Nombre completo </label>
+                    <input class= "form__input js-name" type="text" name="name" id="name" placeholder="Ej: Ralph Wiggum" />
+                </div>
+
+                <div class="container__form">
+                    <label class="tittleInput" for="work">Puesto</label>
+                    <input class= "form__input js-job" type="text" name="work" id="work" placeholder="Ej: Estudiante de mi cole" />
+                </div>
+
+                <!-- añadir imagen -->
+            
+                    
+               
+                <div class="container__form image-section">
+                    <div class="container__form-addImage">
+                        <h1 class="tittleInput">Imagen de perfil</h1>
+                        <label class="button-addImage" for="img-selector">Añadir imagen</label>
+                        <input type="file" name="" id="img-selector" class="action__hiddenField js__profile-upload-btn">
+                    </div>
+
+                    <div class="profile__preview js__profile-preview"></div>
+                    
+                </div>
+
+                <div class="container__form">
+                    <label class="tittleInput" for="email">Email</label>
+                    <input class= "form__input js-input-email" type="email" id="email" name="email" placeholder="Ej: yomellamoralph@gmail.com"/>
+                </div>
+
+                <div class="container__form">
+                    <label class="tittleInput" for="telefono">Teléfono</label>
+                    <input class= "form__input js-input-number" type="number" id="telefono" name="telefono" placeholder="Ej: 666 666 666"/>
+                </div>
+
+                <div class="container__form">
+                    <label class="tittleInput" for="linkedin">LinkedIn</label>
+                    <input class= "form__input" type="url" id="linkedin" name="linkedin" placeholder=" Ej: https://www.linkedin.com/in/ralph-wiggum/"/>
+                </div>
+
+                <div class="container__form">
+                    <label class="tittleInput" for="github">Github</label>
+                    <input class= "form__input" type="text" id="github" name="github" placeholder="Ej: chuchu-chuli" />
+                </div>
+        </section>
+    </fieldset>  
+
+    <!-- COMPARTE -->
+
+    <fieldset class="fieldset">
+        <div class="container__form">
+            <div class="container__tittleArrow js-tittleArrowC">
+                <legend  class="legendTittle"><i class="desing fa-solid fa-share-nodes"></i>COMPARTE</legend> <i class="fa-solid fa-angle-down js-arrowC"></i>
+            </div>
+
+            
+            <div class="container__button js-buttonComparte">
+                <div class="container__button-iconoSubmit">
+                    <i class="fa-regular fa-address-card"></i>
+                    <input class="container__button-submit" type="submit" value="CREAR TARJETA">
+                </div>
+            </div>
+        </div>
+    </fieldset>
+
+    </form>
+
+    <!-- mensaje de cuando se crea la tarjeta, rellenar con js? -->
+
+    <section>
+        <h1></h1>
+        <p></p>
+        <a href=""></a>
+    </section>
+      </div>
+    </div>
+    <footer class="footer">
+    <p class="footer__p">Awesome profile-cards @2018</p>
+    <img class="footer__img" src="./images/logo-adalab.png" alt="logo de adalab">
+</footer>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
