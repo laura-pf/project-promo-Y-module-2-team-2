@@ -70,22 +70,22 @@
     flex-direction: row;
 
     &-1 {
-        width: 30px;
-        height: 25px;
         background-color: #0da87a;
     }
 
     &-2 {
-        width: 30px;
-        height: 25px;
         background-color: #fffec4;
     }
 
     &-3 {
-        width: 30px;
-        height: 25px;
         background-color: #e87efd;
     }
+}
+
+.boxColors {
+    width: 30px;
+    height: 25px;
+
 }
 
 .colors__3 {
@@ -213,6 +213,8 @@
     
 }
 
+//JS CLASES
+
 .collapsed {
     display: flex;
     flex-direction: column;
@@ -240,6 +242,11 @@
 .rotation {
 transform: rotate(180deg);
    
+}
+
+.colortittleKrusty {
+   color: #0da87a;
+
 }
 
 
