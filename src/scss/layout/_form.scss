@@ -70,22 +70,21 @@
     flex-direction: row;
 
     &-1 {
-        width: 30px;
-        height: 25px;
         background-color: #0da87a;
     }
 
     &-2 {
-        width: 30px;
-        height: 25px;
         background-color: #fffec4;
     }
 
     &-3 {
-        width: 30px;
-        height: 25px;
         background-color: #e87efd;
     }
+}
+.boxcolor{
+    width: 30px;
+    height: 25px;
+
 }
 
 .colors__3 {
