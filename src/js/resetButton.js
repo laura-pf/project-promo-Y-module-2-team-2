@@ -50,6 +50,8 @@ const handleClickReset = (event) => {
     linkGithub.innerHTML = defaultCard.github;
     profileImage.src = defaultCard.image;
     profilePreview.style.backgroundImage = '';
+    namePreview.classList.add("colortittleMarge");
+    borderCard.classList.add("card__profile-title");
 
 }
 
