@@ -18,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- link de iconos -->
     <script src="https://kit.fontawesome.com/94e91f4c1c.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/main-73244f1f.css">
+    <link rel="stylesheet" href="./assets/main-e51ecea3.css">
   </head>
   <body>
     <header class="header">  
@@ -41,7 +41,7 @@
     </button>
 
     <div class="card__profile js-card">
-      <div class="card__profile-title">
+      <div class="card__profile-title js-borderCard">
         <h2 class="card__profile-name js-profile-name" id="profile-name">
           Ralph Wiggum
         </h2>
@@ -63,26 +63,26 @@
 
       <div class="card__icons">
         <a href="tel:" class="js-link-phone">
-          <div class="card__icon">
-            <i class="fa-solid fa-mobile-screen-button"></i>
+          <div class="card__icon js-containerIcon">
+            <i class="fa-solid fa-mobile-screen-button js-iconCard"></i>
           </div>
         </a>
 
         <a href="mailto:" class="js-link-email">
-          <div class="card__icon">
-            <i class="fa-regular fa-envelope"></i>
+          <div class="card__icon js-containerIcon">
+            <i class="fa-regular fa-envelope js-iconCard"></i>
           </div>
         </a>
 
         <a href="" target="_blank" class="js-link-linkedin">
-          <div class="card__icon">
-            <i class="fa-brands fa-linkedin-in js-icon-linkedin"></i>
+          <div class="card__icon js-containerIcon">
+            <i class="fa-brands fa-linkedin-in js-iconCard"></i>
           </div>
         </a>
 
         <a href="" target="_blank" class="js-link-github">
-          <div class="card__icon">
-            <i class="fa-brands fa-github-alt"></i>
+          <div class="card__icon js-containerIcon">
+            <i class="fa-brands fa-github-alt js-iconCard"></i>
           </div>
         </a>
       </div>
@@ -116,31 +116,31 @@
                     <div class="colors__1-3"> </div>
                 </span>
             </label>
-            <input type="radio" name="colors" id="colors1" value="colors1" checked/>
+            <input class="js-color-marge" type="radio" name="colors" id="colors1" value="colors1" checked/>
         </div>
 
         
     <div class="container-itemcolors">
         <label for="colors2">
             <span class="colors__2">
-                <div class="colors__2-1"></div>
-                <div class="colors__2-2"></div>
-                <div class="colors__2-3"></div>
+                <div class="colors__2-1 boxColors"></div>
+                <div class="colors__2-2 boxColors"></div>
+                <div class="colors__2-3 boxColors"></div>
             </span>
         </label>
-        <input type="radio" name="colors" id="colors2" value="colors2" />
+        <input class="js-color-krusty" type="radio" name="colors" id="colors2" value="colors2" />
     </div>
 
 
     <div class="container-itemcolors">
         <label for="colors3">
             <span class="colors__3">
-                <div class="colors__3-1" ></div>
-                <div class="colors__3-2"></div>
-                <div class="colors__3-3"></div>
+                <div class="colors__3-1 boxColors" ></div>
+                <div class="colors__3-2 boxColors"></div>
+                <div class="colors__3-3 boxColors"></div>
             </span>
         </label>
-        <input type="radio" name="colors" id="colors3" value="colors3" />
+        <input class="js-color-apu" type="radio" name="colors" id="colors3" value="colors3" />
     </div>
     </section>
     </fieldset>
