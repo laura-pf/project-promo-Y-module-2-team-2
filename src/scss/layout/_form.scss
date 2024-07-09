@@ -70,22 +70,22 @@
     flex-direction: row;
 
     &-1 {
-        width: 30px;
-        height: 25px;
         background-color: #0da87a;
     }
 
     &-2 {
-        width: 30px;
-        height: 25px;
-        background-color: #fffec4;
+        background-color: #fffc68;
     }
 
     &-3 {
-        width: 30px;
-        height: 25px;
         background-color: #e87efd;
     }
+}
+
+.boxColors {
+    width: 30px;
+    height: 25px;
+
 }
 
 .colors__3 {
@@ -213,33 +213,6 @@
     
 }
 
-.collapsed {
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-    gap: 10px;
-}
 
-.collapsedButton {
-    margin: 0 auto;
-        width: 280px;
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: $color-lightOrange;
-        padding: 25px 0;
-    
-    
-    
-        border-radius: 20px;
-        margin-bottom: 40px;
-}
-
-.rotation {
-transform: rotate(180deg);
-   
-}
 
 

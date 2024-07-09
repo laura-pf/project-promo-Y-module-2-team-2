@@ -3,9 +3,11 @@
 @import 'core/variables';
 @import './layout/footer';
 @import './layout/index';
+@import './layout/header';
 
-@import "layout/header";
-@import "layout/profile";
+@import './layout/profile';
+
 @import './layout/form';
+@import './layout/jsclass';
 
-@import 'pages/design';
+@import './pages/design';
