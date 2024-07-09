@@ -1,0 +1,77 @@
+.collapsed {
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+    gap: 10px;
+}
+
+.collapsedButton {
+    margin: 0 auto;
+    width: 280px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-lightOrange;
+    padding: 25px 0;
+
+
+
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+
+.rotation {
+    transform: rotate(180deg);
+
+}
+
+.colortittleKrusty {
+    color: #0da87a;
+
+}
+
+.colorBorderCardKrusty {
+    border-left: 5px solid #fffc68;
+    padding-left: 20px;
+}
+
+.colortittleMarge {
+    color: #0408ff;
+
+}
+.colortittleApu {
+    color: #b16d1f;
+
+}
+
+.colorBorderCardApu {
+    border-left: 5px solid #2b3538;
+    padding-left: 20px;
+}
+
+.borderKrusty {
+
+    border: 2px solid #e87efd;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.borderApu {
+
+    border: 2px solid #45b658;
+    border-radius: 100%;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

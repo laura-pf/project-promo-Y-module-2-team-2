@@ -213,66 +213,6 @@
     
 }
 
-//JS CLASES
-
-.collapsed {
-    display: flex;
-    flex-direction: column;
-    margin-top: 25px;
-    gap: 10px;
-}
-
-.collapsedButton {
-    margin: 0 auto;
-        width: 280px;
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: $color-lightOrange;
-        padding: 25px 0;
-    
-    
-    
-        border-radius: 20px;
-        margin-bottom: 40px;
-}
-
-.rotation {
-transform: rotate(180deg);
-   
-}
-
-.colortittleKrusty {
-   color: #0da87a;
-
-}
-
-.colorBorderCardKrusty {
-    border-left: 5px solid #fffc68;
-    padding-left: 20px;
-}
-
-.colortittleMarge {
-    color: #0408ff;
-
-}
-// .colorBorderCardMarge {
-//     border-left: 5px solid #fae207;
-//     padding-left: 20px;
-    
-// }
-
-.colortittleApu {
-    color: #b16d1f;
-
-}
-
-.colorBorderCardApu {
-    border-left: 5px solid #2b3538;
-    padding-left: 20px;
-}
 
 
 
