@@ -17,7 +17,7 @@ const linkEmail = document.querySelector(".js-link-email");
 const inputsFromFill = document.querySelector(".js-form-fillR");
 
 const data = {
-    palette: "",
+    palette: 1,
     name:"",
     job:"",
     phone:"",
@@ -27,6 +27,7 @@ const data = {
     photo:"",
 
 }
+
 
 //DISEÑA
 const clickPaleteMarge = (event) => {
@@ -54,7 +55,9 @@ const clickPaleteMarge = (event) => {
 
    }
 
-   data.palette = parseInt(event.target.value);
+   data.palette = event.target.value;
+
+   
 
 };
 
@@ -86,7 +89,9 @@ const clickPaleteKrusty = (event) => {
 
    }
 
-   data.palette = parseInt(event.target.value);
+   data.palette = event.target.value;
+
+
     
 };
 
@@ -116,7 +121,7 @@ const clickPaleteApu = (event) => {
 
    }
 
-   data.palette = parseInt(event.target.value);
+   data.palette = event.target.value;
     
 };
 
@@ -162,26 +167,28 @@ inputsFromFill.addEventListener("input", (event) => {
     
 });
 
-console.log(data);
+
 
 //SHARE
 
 const buttonShare = document.querySelector(".js-buttonShare");
 
 const handleClickShare = (event) => {
-    event.preventDefoult();
-    console.log("ha hecho click");
+    event.preventDefault();
+    
 
-    // fetch("https://dev.adalab.es/card/16766402168739246", {
-    //     method: "POST",
-    //     body: JSON.stringify(data),
-    //     headers: {"Content-type" : "application/json"},
-    // })
+    fetch("https://dev.adalab.es/card/16766402168739246", {
+        method: "POST",
+        body: JSON.stringify(data),
+        headers: {"Content-type" : "application/json"},
+    })
 
-    // .then((response) => response.json())
-    // .then((data) => {
+    .then((response) => response.json())
+    .then((data) => {
+        console.log(data)
         
-    // })
+        
+    })
 
 
 }

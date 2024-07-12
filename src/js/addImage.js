@@ -33,6 +33,7 @@ function writeImage() {
    */
   profileImage.src = fr.result;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  data.photo = fr.result;
 }
 
 
