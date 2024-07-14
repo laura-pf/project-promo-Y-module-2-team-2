@@ -92,7 +92,7 @@
 
       </div>
       <div class="form-container">
-        <form class="form js-form" action="https://dev.adalab.es/api/form " method="get">
+        <form class="form js-form" action="https://dev.adalab.es/api/form " method="post">
 
     <!-- DISEÑA -->
 
@@ -116,7 +116,7 @@
                     <div class="colors__1-3"> </div>
                 </span>
             </label>
-            <input class="js-color-marge" type="radio" name="colors" id="colors1" value="colors1" checked/>
+            <input class="js-color-marge" type="radio" name="colors" id="colors1" value="1" checked/>
         </div>
 
         
@@ -128,7 +128,7 @@
                 <div class="colors__2-3 boxColors"></div>
             </span>
         </label>
-        <input class="js-color-krusty" type="radio" name="colors" id="colors2" value="colors2" />
+        <input class="js-color-krusty" type="radio" name="colors" id="colors2" value="2" />
     </div>
 
 
@@ -140,7 +140,7 @@
                 <div class="colors__3-3 boxColors"></div>
             </span>
         </label>
-        <input class="js-color-apu" type="radio" name="colors" id="colors3" value="colors3" />
+        <input class="js-color-apu" type="radio" name="colors" id="colors3" value="3" />
     </div>
     </section>
     </fieldset>
@@ -216,7 +216,8 @@
             <div class="container__button js-buttonComparte">
                 <div class="container__button-iconoSubmit">
                     <i class="fa-regular fa-address-card"></i>
-                    <input class="container__button-submit" type="submit" value="CREAR TARJETA">
+                    <button type="submit" class="container__button-submit js-buttonShare">CREAR TARJETA</button>
+                    <!-- <input class="container__button-submit js-buttonShare" type="submit" value="CREAR TARJETA"> -->
                 </div>
             </div>
         </div>
