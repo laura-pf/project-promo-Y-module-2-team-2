@@ -15,6 +15,9 @@ const linkGithub = document.querySelector(".js-link-github");
 const linkPhone = document.querySelector(".js-link-phone");
 const linkEmail = document.querySelector(".js-link-email");
 const inputsFromFill = document.querySelector(".js-form-fillR");
+const responseURL = document.querySelector('.js-response');
+const textResponseURL = document.querySelector('.js-text-response');
+const twitter = document.querySelector('.js-twitter');
 
 const data = {
     palette: 1,
@@ -88,11 +91,9 @@ const clickPaleteKrusty = (event) => {
         containerIcon.classList.remove("borderApu");
 
    }
-
    data.palette = event.target.value;
 
 
-    
 };
 
 paleteKrusty.addEventListener("click", clickPaleteKrusty);
@@ -131,7 +132,7 @@ paleteApu.addEventListener("click", clickPaleteApu);
 //FORMULARIO
 inputsFromFill.addEventListener("input", (event) => {
     event.preventDefault();
-
+    
     if (event.target.id === "name"){
         if (event.target.value) {
             namePreview.innerHTML = event.target.value;
@@ -147,16 +148,15 @@ inputsFromFill.addEventListener("input", (event) => {
             occupationPreview.innerHTML = "Estudiante de mi cole";
         }
     } else if (event.target.id === "linkedin") {
-        linkLinkedin.href = event.target.value;
         data.linkedin = event.target.value;
+        linkLinkedin.href = data.linkedin;
 
     } else if (event.target.id === "github") {
-        linkGithub.href = "https://github.com/" + event.target.value; 
-        data.github = "https://github.com/" + event.target.value;
+        data.github = event.target.value;
+        linkGithub.href = "https://github.com/" + data.github; 
     } else if (event.target.id === "telefono") {
-        linkPhone.href = "tel:" + event.target.value;
-        data.phone = "tel:" + event.target.value;
-
+        data.phone = event.target.value;
+        linkPhone.href = "tel:" + data.phone;
 
     }  else if (event.target.id === "email") {
         linkEmail.href = "mailto:" + event.target.value;
@@ -175,23 +175,42 @@ const buttonShare = document.querySelector(".js-buttonShare");
 
 const handleClickShare = (event) => {
     event.preventDefault();
+    responseURL.classList.remove('hidden');
     
+    console.log(data);
+    data.palette = parseInt(data.palette);
+    fetch("https://dev.adalab.es/api/card/", {
+    method: "POST",
+    body: JSON.stringify(data),
+    headers: {"Content-type" : "application/json"}
+})
+.then((response) => response.json())
+.then(function(result) { showURL(result); })
 
-    fetch("https://dev.adalab.es/card/16766402168739246", {
-        method: "POST",
-        body: JSON.stringify(data),
-        headers: {"Content-type" : "application/json"},
-    })
+.catch((error) => {
+    console.error("Error:", error);
+});
 
-    .then((response) => response.json())
-    .then((data) => {
-        console.log(data)
-        
-        
-    })
 
 
 }
 
+function showURL(result){
+    
+    let response;
+    let tittle;
+
+    if(result.success){
+        tittle = '<h1 class="tittle-share">La tarjeta ha sido creada:</h1>'
+        response = '<a class="link-twitter" href=' + result.cardURL + '>' + result.cardURL + '</a>'
+        twitter.setAttribute('data-url', result.cardURL)
+        
+    }else{
+        tittle = '<h1 class="tittle-share">La tarjeta no ha sido creada:</h1>'
+        response = 'ERROR:' + result.error;
+    }
+    const content = tittle + response
+    textResponseURL.innerHTML = content;
+}
 
 buttonShare.addEventListener("click", handleClickShare);

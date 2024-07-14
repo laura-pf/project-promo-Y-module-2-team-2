@@ -213,6 +213,49 @@
     
 }
 
+.hidden {
+    display: none;
+}
 
+.response {
+    color: $color-gray;
+}
 
+.container-share {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
 
+.twitter-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 181px;
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    text-align: center;
+    margin: 5px auto;
+    padding: 8px 9px;
+    gap: 10px;
+}
+
+.tittle-share {
+    color: $color-gray;
+    font-family: $font-body;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.link-twitter {
+    color: #f5bb1d;
+    font-size: 12px;
+    font-weight: 600;
+    font-family: $font-body;
+    padding: 10px;
+}
