@@ -259,3 +259,10 @@
     font-family: $font-body;
     padding: 10px;
 }
+.required{
+    color:red;
+}
+
+input:invalid{
+    border-color: red;
+}

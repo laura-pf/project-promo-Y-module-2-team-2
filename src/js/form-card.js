@@ -175,8 +175,20 @@ const buttonShare = document.querySelector(".js-buttonShare");
 
 const handleClickShare = (event) => {
     event.preventDefault();
+
+//Add Requiered Inputs 
+if (!form.checkValidity()){
+    formRellena.classList.toggle("collapsed");
+    buttonComparte.classList.remove("collapsedButton");
+    arrowRellena.classList.toggle("rotation");
+    arrowComparte.classList.remove("rotation");
+
+    return;
+   
+}
+
     responseURL.classList.remove('hidden');
-    
+
     console.log(data);
     data.palette = parseInt(data.palette);
     fetch("https://dev.adalab.es/api/card/", {
