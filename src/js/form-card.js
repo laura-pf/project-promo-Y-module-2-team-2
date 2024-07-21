@@ -169,6 +169,12 @@ function showURL(result) {
   let tittle;
 
   if (result.success) {
+    function showXButtonShare() {
+      twitter.classList.remove("hidden");
+    }
+
+    setTimeout(showXButtonShare, 1000);
+
     tittle =
       '<h1 class="tittle-share">La tarjeta se ha creado correctamente... ¡Todo ha salido a pedir de Milhouse!</h1>';
     response =
@@ -177,17 +183,24 @@ function showURL(result) {
       ">" +
       result.cardURL +
       "</a>";
-    twitter.setAttribute("href", `https://twitter.com/intent/tweet?text=Disfruta de mi nueva tarjeta de visita&url=${result.cardURL}`);
+
+    twitter.setAttribute(
+      "href",
+      `https://twitter.com/intent/tweet?text=Disfruta de mi nueva tarjeta de visita&url=${result.cardURL}`
+    );
   } else {
+    twitter.classList.add("hidden");
     tittle =
       '<h1 class="tittle-share message-response">Mosquis... La tarjeta no ha sido creada:</h1>';
     response =
       '<p class= "message-response"> ¡Ouch! La tarjeta no ha podido crearse correctamente... </p>';
 
     if (result.error === "Database error: ER_DATA_TOO_LONG") {
+      twitter.classList.add("hidden");
       response +=
         '<p class="message-response" >Error en base de datos: algún dato es demasiado largo.</p>';
     } else {
+      twitter.classList.add("hidden");
       response += `<p class = "message-response"> ${result.error} </p>`;
     }
   }
@@ -196,4 +209,3 @@ function showURL(result) {
 }
 
 buttonShare.addEventListener("click", handleClickShare);
-//cambio para modificar cambios

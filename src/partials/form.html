@@ -2,7 +2,6 @@
   <!-- DISEÑA -->
 
   <fieldset class="fieldset">
-    <!-- pongo este div para hacer un display flex y meter un space between entre el titulo y el icono  -->
     <div class="container__tittleArrow js-tittleArrowD">
       <legend class="legendTittle">
         <i class="desing fa-regular fa-object-ungroup"></i> DISEÑA
@@ -12,7 +11,6 @@
 
     <section class="container__form-section js-form-fillD">
       <h1 class="tittle__colors">COLORES</h1>
-      <!-- no se si va con h1 o con otro campo de formulario que no recuerdo/sé -->
 
       <div class="container-itemcolors">
         <label for="colors1">
@@ -80,9 +78,7 @@
 
     <section class="container__form-section js-form-fillR">
       <div class="container__form">
-        <label class="tittleInput" for="name">
-          Nombre completo <span class="required">*</span></label
-        >
+        <label class="tittleInput" for="name"> Nombre completo </label>
         <input
           class="form__input js-name"
           type="text"
@@ -94,9 +90,7 @@
       </div>
 
       <div class="container__form">
-        <label class="tittleInput" for="work"
-          >Puesto<span class="required">*</span></label
-        >
+        <label class="tittleInput" for="work">Puesto</label>
         <input
           class="form__input js-job"
           type="text"
@@ -111,9 +105,7 @@
 
       <div class="container__form image-section">
         <div class="container__form-addImage">
-          <h1 class="tittleInput">
-            Imagen de perfil<span class="required">*</span>
-          </h1>
+          <h1 class="tittleInput">Imagen de perfil</h1>
           <label class="button-addImage" for="img-selector"
             >Añadir imagen</label
           >
@@ -131,7 +123,7 @@
 
       <div class="container__form">
         <label class="tittleInput" for="email"
-          >Email<span class="required">*</span></label
+          >Email</span></label
         >
         <input
           class="form__input js-input-email"
@@ -144,9 +136,7 @@
       </div>
 
       <div class="container__form">
-        <label class="tittleInput" for="telefono"
-          >Teléfono<span class="required">*</span></label
-        >
+        <label class="tittleInput" for="telefono">Teléfono</label>
         <input
           class="form__input js-input-number"
           type="number"
@@ -158,30 +148,24 @@
       </div>
 
       <div class="container__form">
-        <label class="tittleInput" for="linkedin"
-          >LinkedIn<span class="required">*</span></label
-        >
+        <label class="tittleInput" for="linkedin">LinkedIn</label>
         <input
           class="form__input"
           type="url"
           id="linkedin"
           name="linkedin"
           placeholder=" Ej: https://www.linkedin.com/in/ralph-wiggum/"
-          required
         />
       </div>
 
       <div class="container__form">
-        <label class="tittleInput" for="github"
-          >Github<span class="required">*</span></label
-        >
+        <label class="tittleInput" for="github">Github</label>
         <input
           class="form__input"
           type="text"
           id="github"
           name="github"
           placeholder="Ej: chuchu-chuli"
-          required
         />
       </div>
     </section>
@@ -204,22 +188,19 @@
           <button type="submit" class="container__button-submit js-buttonShare">
             CREAR TARJETA
           </button>
-          <!-- <input class="container__button-submit js-buttonShare" type="submit" value="CREAR TARJETA"> -->
         </div>
       </div>
     </div>
   </fieldset>
 </form>
 
-<!-- mensaje de cuando se crea la tarjeta, rellenar con js? -->
+<!-- mensaje de cuando se crea la tarjeta-->
 
 <section class="js-response response hidden">
   <div class="js-text-response container-share"></div>
-  <div class="twitter-icon">
-    <i class="fa-brands fa-square-x-twitter"></i>
-    <a target="_blank"
-      class="twitter-share-button js-twitter"
-      href="">
+  <div class="twitter-icon js-shareX">
+    <a target="_blank" class="twitter-share-button js-twitter hidden" href=""
+      ><i class="fa-brands fa-square-x-twitter"></i>
       Compartir en X
     </a>
   </div>

@@ -146,7 +146,7 @@
 
 .form__input{
     padding: 10px;
-    border: solid 1px $color-input-form;
+    border: solid 1px $color-lightOrange;
 }
 
 .button-addImage {
@@ -219,6 +219,7 @@
 
 .response {
     color: $color-gray;
+    padding-bottom: 35px;
 }
 
 .container-share {
@@ -229,22 +230,25 @@
     gap: 6px;
 }
 
-.twitter-icon {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+.twitter-share-button {
     width: 181px;
     background-color: black;
     color: white;
     border-radius: 2px;
     text-align: center;
     margin: 25px auto;
-    padding: 8px 9px;
     gap: 10px;
     padding: 15px;
     border-radius: 10px;
     font-family: $font-body;
+
+}
+.twitter-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   
 
 }
 
@@ -257,17 +261,15 @@
 }
 
 .link-twitter {
-    color: #f5bb1d;
+    color: $color-lightOrange;
     font-size: 12px;
     font-weight: 600;
     font-family: $font-body;
     padding: 10px;
 }
-.required{
-    color: #f5bb1d;
-    display: none;
-}
+
+
 
 input:invalid{
-    border-color: #f5bb1d;
+    border-color:$color-lightOrange;
 }
