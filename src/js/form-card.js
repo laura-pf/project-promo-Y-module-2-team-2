@@ -146,6 +146,7 @@ const handleClickShare = (event) => {
 
   console.log(data);
   data.palette = parseInt(data.palette);
+
   fetch("https://dev.adalab.es/api/card/", {
     method: "POST",
     body: JSON.stringify(data),
@@ -166,7 +167,8 @@ function showURL(result) {
   let tittle;
 
   if (result.success) {
-    tittle = '<h1 class="tittle-share">La tarjeta ha sido creada:</h1>';
+    tittle =
+      '<h1 class="tittle-share">La tarjeta se ha creado correctamente... ¡Todo ha salido a pedir de Milhouse!</h1>';
     response =
       '<a class="link-twitter" href=' +
       result.cardURL +
@@ -175,11 +177,18 @@ function showURL(result) {
       "</a>";
     twitter.setAttribute("data-url", result.cardURL);
   } else {
-    tittle = '<h1 class="tittle-share">La tarjeta no ha sido creada:</h1>';
-    response = "ERROR:" + result.error;
+    tittle =
+      '<h1 class="tittle-share">Mosquis... La tarjeta no ha sido creada:</h1>';
+    response = "¡Ouch! La tarjeta no ha podido crearse correctamente... ";
+    if (result.error === "Database error: ER_DATA_TOO_LONG") {
+      response += "Error en base de datos: algún dato es demasiado largo.";
+    } else {
+      response += result.error;
+    }
   }
   const content = tittle + response;
   textResponseURL.innerHTML = content;
 }
 
 buttonShare.addEventListener("click", handleClickShare);
+//cambio para modificar cambios
