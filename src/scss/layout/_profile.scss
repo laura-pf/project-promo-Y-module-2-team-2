@@ -3,6 +3,7 @@
   padding: 38px 35px 40px 45px;
   background-image: url(/images/imagen-nubes-fondo-sin-letras.jpg);
   height: 100%;
+  
 
   @media (min-width: 768px) {
     display: flex;
@@ -42,7 +43,11 @@
   }
   &__profile-photo {
     display: block;
-    width: 100%;
+    min-width: 240px;
+    min-height: 230px;
+    max-width: 240px;
+    max-height: 230px;
+    object-fit: contain;
   }
   &__profile-name {
     font-size: 18px;
