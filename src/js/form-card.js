@@ -219,7 +219,7 @@ function showURL(result){
         
     }else {
         tittle = '<h1 class="tittle-share">Mosquis... La tarjeta no ha sido creada:</h1>'
-        response = '¡Ouch! La tarjeta no ha podido crearse correctamente... q'
+        response = '¡Ouch! La tarjeta no ha podido crearse correctamente... '
         if (result.error === 'Database error: ER_DATA_TOO_LONG'){
             response += 'Error en base de datos: algún dato es demasiado largo.'
         } else {
@@ -231,3 +231,4 @@ function showURL(result){
 }
 
 buttonShare.addEventListener("click", handleClickShare);
+//cambio para modificar cambios 
