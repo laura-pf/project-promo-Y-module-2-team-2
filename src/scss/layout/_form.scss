@@ -265,8 +265,9 @@
 }
 .required{
     color: #f5bb1d;
+    display: none;
 }
 
 input:invalid{
-    border-color: red;
+    border-color: #f5bb1d;
 }
