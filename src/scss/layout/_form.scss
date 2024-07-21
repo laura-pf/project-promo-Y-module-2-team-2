@@ -239,9 +239,13 @@
     color: white;
     border-radius: 2px;
     text-align: center;
-    margin: 5px auto;
+    margin: 25px auto;
     padding: 8px 9px;
     gap: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    font-family: $font-body;
+
 }
 
 .tittle-share {
@@ -260,7 +264,7 @@
     padding: 10px;
 }
 .required{
-    color:red;
+    color: #f5bb1d;
 }
 
 input:invalid{
