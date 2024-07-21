@@ -76,9 +76,15 @@
       <i class="fa-solid fa-angle-down js-arrowR"></i>
     </div>
 
+    <p class="tittleInput hidden js-requiredFormMessage">
+      Rellena los campos requeridos <span class="required">*</span>
+    </p>
+
     <section class="container__form-section js-form-fillR">
       <div class="container__form">
-        <label class="tittleInput" for="name"> Nombre completo </label>
+        <label class="tittleInput" for="name">
+          Nombre completo <span class="required">*</span></label
+        >
         <input
           class="form__input js-name"
           type="text"
@@ -90,7 +96,9 @@
       </div>
 
       <div class="container__form">
-        <label class="tittleInput" for="work">Puesto</label>
+        <label class="tittleInput" for="work"
+          >Puesto <span class="required">*</span></label
+        >
         <input
           class="form__input js-job"
           type="text"
@@ -105,7 +113,9 @@
 
       <div class="container__form image-section">
         <div class="container__form-addImage">
-          <h1 class="tittleInput">Imagen de perfil</h1>
+          <h1 class="tittleInput">
+            Imagen de perfil <span class="required">*</span>
+          </h1>
           <label class="button-addImage" for="img-selector"
             >Añadir imagen</label
           >
@@ -123,7 +133,7 @@
 
       <div class="container__form">
         <label class="tittleInput" for="email"
-          >Email</span></label
+          >Email<span class="required">*</span></label
         >
         <input
           class="form__input js-input-email"
@@ -136,7 +146,9 @@
       </div>
 
       <div class="container__form">
-        <label class="tittleInput" for="telefono">Teléfono</label>
+        <label class="tittleInput" for="telefono"
+          >Teléfono <span class="required">*</span></label
+        >
         <input
           class="form__input js-input-number"
           type="number"
@@ -148,24 +160,30 @@
       </div>
 
       <div class="container__form">
-        <label class="tittleInput" for="linkedin">LinkedIn</label>
+        <label class="tittleInput" for="linkedin"
+          >LinkedIn <span class="required">*</span>
+        </label>
         <input
           class="form__input"
           type="url"
           id="linkedin"
           name="linkedin"
           placeholder=" Ej: https://www.linkedin.com/in/ralph-wiggum/"
+          required
         />
       </div>
 
       <div class="container__form">
-        <label class="tittleInput" for="github">Github</label>
+        <label class="tittleInput" for="github"
+          >Github <span class="required">*</span></label
+        >
         <input
           class="form__input"
           type="text"
           id="github"
           name="github"
           placeholder="Ej: chuchu-chuli"
+          required
         />
       </div>
     </section>

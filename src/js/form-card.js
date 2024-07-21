@@ -16,6 +16,7 @@ const inputsFromFill = document.querySelector(".js-form-fillR");
 const responseURL = document.querySelector(".js-response");
 const textResponseURL = document.querySelector(".js-text-response");
 const twitter = document.querySelector(".js-twitter");
+const requiredMesagge = document.querySelector(".js-requiredFormMessage");
 
 const data = {
   palette: 1,
@@ -131,8 +132,8 @@ inputsFromFill.addEventListener("input", (event) => {
     data.phone = event.target.value;
     linkPhone.href = "tel:" + data.phone;
   } else if (event.target.id === "email") {
-    linkEmail.href = "mailto:" + event.target.value;
-    data.email = "mailto:" + event.target.value;
+    data.email = event.target.value;
+    linkEmail.href = "mailto:" + data.email;
   }
 });
 
@@ -145,6 +146,7 @@ const handleClickShare = (event) => {
 
   //Add Requiered Inputs
   if (!form.checkValidity()) {
+    requiredMesagge.classList.remove("hidden");
     formRellena.classList.toggle("collapsed");
     buttonComparte.classList.remove("collapsedButton");
     arrowRellena.classList.toggle("rotation");
@@ -156,8 +158,9 @@ const handleClickShare = (event) => {
 
   responseURL.classList.remove("hidden");
 
-  console.log(data);
   data.palette = parseInt(data.palette);
+
+  console.log(data);
 
   fetch("https://dev.adalab.es/api/card/", {
     method: "POST",

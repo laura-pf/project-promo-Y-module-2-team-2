@@ -84,7 +84,15 @@
 .message-response{
     font-family: $font-body;
     margin: 5px;
+    ;
 
 
 }
 
+.required{
+    color: $color-lightOrange;
+}
+
+.response {
+    padding: 55px
+}
