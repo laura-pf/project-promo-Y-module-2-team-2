@@ -142,6 +142,8 @@ const buttonShare = document.querySelector(".js-buttonShare");
 
 const handleClickShare = (event) => {
   event.preventDefault();
+  buttonComparte.classList.add("buttonShareclick");
+
   responseURL.classList.remove("hidden");
 
   console.log(data);
@@ -178,12 +180,15 @@ function showURL(result) {
     twitter.setAttribute("href", `https://twitter.com/intent/tweet?text=Disfruta de mi nueva tarjeta de visita&url=${result.cardURL}`);
   } else {
     tittle =
-      '<h1 class="tittle-share">Mosquis... La tarjeta no ha sido creada:</h1>';
-    response = "¡Ouch! La tarjeta no ha podido crearse correctamente... ";
+      '<h1 class="tittle-share message-response">Mosquis... La tarjeta no ha sido creada:</h1>';
+    response =
+      '<p class= "message-response"> ¡Ouch! La tarjeta no ha podido crearse correctamente... </p>';
+
     if (result.error === "Database error: ER_DATA_TOO_LONG") {
-      response += "Error en base de datos: algún dato es demasiado largo.";
+      response +=
+        '<p class="message-response" >Error en base de datos: algún dato es demasiado largo.</p>';
     } else {
-      response += result.error;
+      response += `<p class = "message-response"> ${result.error} </p>`;
     }
   }
   const content = tittle + response;
