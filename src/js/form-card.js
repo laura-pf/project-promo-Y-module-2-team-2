@@ -177,7 +177,7 @@ function showURL(result) {
       ">" +
       result.cardURL +
       "</a>";
-    twitter.setAttribute("data-url", result.cardURL);
+    twitter.setAttribute("href", `https://twitter.com/intent/tweet?text=Disfruta de mi nueva tarjeta de visita&url=${result.cardURL}`);
   } else {
     tittle =
       '<h1 class="tittle-share message-response">Mosquis... La tarjeta no ha sido creada:</h1>';
