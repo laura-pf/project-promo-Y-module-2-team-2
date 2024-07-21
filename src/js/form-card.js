@@ -142,6 +142,16 @@ const buttonShare = document.querySelector(".js-buttonShare");
 
 const handleClickShare = (event) => {
   event.preventDefault();
+
+  //Add Requiered Inputs
+  if (!form.checkValidity()) {
+    formRellena.classList.toggle("collapsed");
+    buttonComparte.classList.remove("collapsedButton");
+    arrowRellena.classList.toggle("rotation");
+    arrowComparte.classList.remove("rotation");
+
+    return;
+  }
   buttonComparte.classList.add("buttonShareclick");
 
   responseURL.classList.remove("hidden");
@@ -177,7 +187,10 @@ function showURL(result) {
       ">" +
       result.cardURL +
       "</a>";
-    twitter.setAttribute("href", `https://twitter.com/intent/tweet?text=Disfruta de mi nueva tarjeta de visita&url=${result.cardURL}`);
+    twitter.setAttribute(
+      "href",
+      `https://twitter.com/intent/tweet?text=Disfruta de mi nueva tarjeta de visita&url=${result.cardURL}`
+    );
   } else {
     tittle =
       '<h1 class="tittle-share message-response">Mosquis... La tarjeta no ha sido creada:</h1>';
